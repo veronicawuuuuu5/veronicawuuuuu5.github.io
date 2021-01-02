@@ -39,7 +39,7 @@ html, body {
 
 
 #menu {
-  margin-left: 12%;
+  padding-left: 12%;
 }
 
 .menu_wrapper_class {
@@ -169,13 +169,14 @@ html, body {
 .img-self {
   width: 100%;
   margin: auto;
+	padding-top: 2em;
   display: block;
   position: relative;
 }
 
 .name {
   position: absolute;
-  top: 5.5em;
+  top: 6em;
   right: 4.75em;
   text-shadow: 0 0 1em #f0f8ff;
   color: #f5f5f5;
@@ -184,7 +185,7 @@ html, body {
 
 .title {
   position: absolute;
-  top: 9.75em;
+  top: 10em;
   right: 6.4em;
   color: #f5f5f5;
 	font-family: serif;
@@ -193,18 +194,17 @@ html, body {
 
 
 #About {
-	width: 100%;
 	box-sizing: border-box;
 	color: #000000;
 	display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(500px, auto));
 	padding: 2em 12% 0.25em 12%;
 }
 
 .stageshot {
   height: auto;
   width: 28em;
-  margin-right: 1.25em;
+	overflow: hidden;
 }
 
 .about_header {
@@ -219,9 +219,18 @@ html, body {
   line-height: 1.75em;
 }
 
+@media only screen and (max-width: 600px) {
+	.stageshot {
+		display: none;
+	}
+	#About {
+	  display: block;
+	}
+}
+
 
 #Gallery {
-  margin: 8em 12% 0 12%;
+  padding: 8em 12% 0 12%;
 	line-height: 150%;
 }
 
@@ -255,15 +264,21 @@ html, body {
 	clear: both;
 }
 
-@media only screen and (max-width: 78em) {
+@media only screen and (max-width: 1248px) {
 	.video_washerwoman_desc_wrapper, .video_secrets_desc_wrapper, .video_pumpup_desc_wrapper {
 		float: left;
 	}
 }
 
+@media only screen and (max-width: 650px) {
+	.video_washerwoman, .video_secrets, .video_pumpup {
+		width: 300px !important;
+		height:169px !important;
+	}
+}
 
 #Lessons {
-  margin: 8em 12% 0 12%;
+  padding: 8em 12% 0 12%;
 	display: inline-block;
 	overflow: hidden;
 }
@@ -277,7 +292,7 @@ html, body {
 .rates {
   margin: 2em 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(450px, auto));
 	justify-content: center;
 }
 
@@ -312,15 +327,26 @@ html, body {
   background-color: #f2f2f2;
 }
 
+@media only screen and (max-width: 760px) {
+	.rates {display: block; margin:auto;}
+	.rates_studio_wrapper, .rates_home_wrapper {
+	  height: 20em;
+	  width: 100%;
+	}
+}
+
+
+
 #footer {
 	margin-top:auto;
 	width: 100%;
 	box-sizing: border-box;
 	background: #d3d3d3;
 	display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
 	padding: 0 12% 0.25em 12%;
 }
+
 
 .followme {
 	margin-top: 1em;
@@ -389,5 +415,5 @@ html, body {
 }
 
 .copyright {
-	align-self: end;
+	align-self: flex-end;
 }
