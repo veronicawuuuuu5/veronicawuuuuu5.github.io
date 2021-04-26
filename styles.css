@@ -262,7 +262,7 @@ html, body {
 
 .cls-1 {
 	fill: none;
-	stroke-width: 5px;
+	stroke-width: 0.25rem;
 	stroke-linecap: round;
 	stroke-miterlimit: 10;
 	stroke-dasharray: 1500;
