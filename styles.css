@@ -47,7 +47,6 @@ html, body {
 	display: flex;
 	justify-content: flex-start;
 	float: left;
-	/* min-height: 2.25rem; */
 }
 
 .logo {
@@ -69,6 +68,10 @@ html, body {
 	font-weight: bolder;
 }
 
+.navlinks-homepage a:hover, .navlinks a:hover {
+	opacity: 60%;
+}
+
 .navlinks-homepage a {
   color: #a97c0a;
 }
@@ -81,37 +84,13 @@ html, body {
   color: #800020;
 }
 
-/*nav links hover over effect*/
-.underline_menu::before {
-	transition: 300ms;
-	height: 0.2em;
-	content: '';
-	position: absolute;
-	background-color: #a97c0a;}
-.underline_menu_red::before {
-	transition: 300ms;
-	height: 0.2em;
-	content: '';
-	position: absolute;
-	background-color: #800020;}
-.underline_menu::before, .underline_menu_red::before {
-	height: 0%;
-	width: 4.7rem;
-	bottom: 0;}
-.underline_menu:hover:not(.activetab)::before, .underline_menu_red:hover:not(.activetab)::before {
-	height: 0.2em;}
-
-
-.underline_menu-changecolor::before {
-	background-color: #800020;}
-
-
 
 .activetab {
 	border-bottom: solid 0.25em #800020;
 }
 
 .geegee_menu {
+	/* display: inline-block; */
 	width: 1.5rem;
 	height: auto;
 }
@@ -195,8 +174,10 @@ html, body {
 		color: #f5f5f5;
 		opacity: 0;
 	}
-	/*does not seem to work*/
-	.navlinks a:hover {opacity: 0.6;}
+
+	.navlinks-homepage a:hover, .navlinks a:hover {
+		opacity: 60%;
+	}
 
   .burgericon-homepage, .burgericon {
     display: block;
