@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>THE EXPLODED TASTEBUDS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="title" content="Veronica Wu">
+    <meta name="description" content="Welcome to my little food website!">
+    <meta name="keywords" content="food photography, food pictures, yummy, food content, cooking, baking">
+    <meta name="author" content="Veronica Wu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      var img = document.querySelector("img-homepage");
+      document.body.classList.add('js-loading');
+      img.addEventListener("load", removeLoadingClass);
+      function removeLoadingClass() {
+        document.body.classList.remove('js-loading');
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <div id=page-container>
+      <div id=content-wrapper>
+        <!-- Navigation bar main-->
+        <header>
+          <nav class=topnav-wrapper-homepage>
+            <div class="navlinks-wrapper">
+              <a class="logo-wrapper" href="index.html">
+                <img class="logo" src="img/logo.png" alt="EXPLODED TASTEBUDS">
+              </a>
+              <div id="topnav" class="navlinks-homepage">
+                <a href="#aboutme"><span class="underline_menu">About</span></a>
+                <a href="food.html"><span class="underline_menu">Food</span></a>
+                <a href="kitty.html"><span class="underline_menu">Kitty <img class="geegee_menu" src="img/cat/cat_menuicon.png"></span></a>
+              </div>
+            </div>
+            <div class= socialmedia-wrapper-homepage>
+              <a href="https://www.instagram.com/the.exploded.tastebuds/" target="_blank" class="fab fa-instagram"></a>
+            </div>
+            <div class="burgericon-homepage">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div class=homepage-main-wrapper>
+            <div class='homepage-img-wrapper'>
+              <!--Img home page -->
+              <img class="img-homepage" src="img/homepage.jpg" alt="Veronica Wu">
+              <div class="text-display-front-page">
+                <h1 class=text-display-front-page-name>The Exploded Tastebuds</h1>
+                <div class=circle-wrapper>
+                  <svg class="circles" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="300 0 400 300">
+                    <path class="cls-1 dot js-loading" style="--item: 1; --color: rgb(42, 42, 187)" d="M378.7,89.91c-17.65,14.52-34.72,30.92-43.88,51.86S326,189.21,341,206.48c8.14,9.39,19.75,15.23,31.72,18.55,25.22,7,53.35,3.24,75.49-10.7s37.77-38,40.81-64c1.33-11.45.17-23.6-5.85-33.43-6.27-10.25-17-16.86-28-21.87-14.09-6.45-29.52-10.94-44.95-9.58s-30.85,9.36-38.26,23"/>
+                    <path class="cls-1 dot  js-loading" style="--item: 3; --color: rgb(210, 105, 30)" d="M350.86,214.05c16.6,13.44,40.51,12.88,61.34,8.15,18.88-4.28,37.51-11.67,51.9-24.63,14.64-13.18,17.36-23.28,14-41.64A63.93,63.93,0,0,0,449.66,113c-19.08-12.13-43.28-14.4-65.45-9.91-17.84,3.61-35.33,11.77-47,25.78-9.84,11.86-16.54,31.25-10.52,46.34C331.89,188.16,339.89,205.18,350.86,214.05Z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div id=aboutme>
+                <h2 class=aboutme-header>About Me</h2>
+                <p class=aboutme-desc>
+                  <span>Hi, my name is Veronica and I am the creator of the Exploded Tastebuds. I currently work as a data scientist and it has been over a year now since the pandemic started. I miss everyone a lot and hope to see you all in person soon.</span>
+                  <span>I post pictures of my food on social media and sometimes admire them a bit too much, but I thought it would be cool to learn a new skill, to build a website from scratch, just like making bread or noodles from scratch with flour. My intention for this site is not to share recipes, there are many amazing recipes on the internet, but rather to share my food pictures as I simply enjoy looking at them.</span>
+                  <span>When I was a kid, I would always ask my grandma for some dough to play with and nobody would eat that weirdly shaped steamed buns out of my hands. I remember trying to copy down recipes from a TV show when I was about 10 and my notes were so messy that it was impossible to read after. Regardless to say, I still carried over my passion for food over the years.</span>
+                  <span>The pandemic has imposed all kinds of changes to people's life, good or bad. Luckily I have something that accompanied me during these difficult times, well, it is something plus my lovely cat GeeGee. I have been reading more cookbooks and trying out at least one new dish every week. I tend to follow the exact recipe when it comes to baking, but I am a little more creative and adventurous when I cook. I have to admit though that there are times when I look at my food and just say to myself “what were you thinking”. My goal is to make the dish that I create artistically plated with well-balanced elements one day.</span>
+                  <span>Cooking might be a repeated routine for some people, but it brings me comfort and joy having to do it every day and still getting excited about it. To anyone who came across my profile, I hope you stay safe, positive and find your little happiness every day.</span>
+                </p>
+            </div>
+          </div>
+        </main>
+
+      </div>
+      <footer id="footer">
+        <div class=footer-socialmedia-wrapper>
+          <h3>Follow me on Instagram</h3>
+          <div class=footer-socialmedia-icon>
+            <a href="https://www.instagram.com/the.exploded.tastebuds/" target="_blank" class="fab fa-instagram"></a>
+          </div>
+        </div>
+        <div class="Contact-wrapper">
+          <h3>Get in touch with me</h3>
+          <div class=email_wrapper>
+            <i class="far fa-envelope"></i>
+            <p class=emailaddress>the.exploded.tastebuds@gmail.com</p>
+          </div>
+        </div>
+        <div class=copyright>
+          <p><small>&copy:2021 THE.EXPLODED.TASTEBUDS</small></p>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>THE EXPLODED TASTEBUDS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="title" content="Veronica Wu">
+    <meta name="description" content="Welcome to my little food website!">
+    <meta name="keywords" content="food photography, food pictures, yummy, food content, cooking, baking">
+    <meta name="author" content="Veronica Wu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+
+  <body>
+    <div id=page-container>
+      <div id=content-wrapper>
+        <!-- Navigation bar main-->
+
+        <header>
+          <nav class=topnav-wrapper>
+            <div class="navlinks-wrapper">
+              <a class="logo-wrapper" href="index.html">
+                <img class="logo" src="img/logo.png" alt="EXPLODED TASTEBUDS">
+              </a>
+              <div id="topnav" class="navlinks">
+                <a href="index.html#aboutme"><span class="underline_menu_red">About</span></a>
+                <a href="food.html"><span class="underline_menu_red">Food</span></a>
+                <a href="kitty.html"><span class="underline_menu_red activetab">Kitty <img class="geegee_menu" src="img/cat/cat_menuicon.png"></span></a>
+              </div>
+            </div>
+            <div class= socialmedia-wrapper>
+              <a href="https://www.instagram.com/the.exploded.tastebuds/" target="_blank" class="fab fa-instagram"></a>
+            </div>
+            <div class="burgericon">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <section>
+            <div class="cat-content-wrapper">
+              <div id="cat-carousel-wrapper" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/cat/GeeGee.jpg" alt="A picture of my cat GeeGee">
+                  </div>
+                  <div class="item">
+                    <img src="img/cat/GeeGee1.jpg" alt="A picture of my cat GeeGee">
+                  </div>
+                  <div class="item">
+                    <img src="img/cat/GeeGee2.jpg" alt="A picture of my cat GeeGee">
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                 <li data-target="#cat-carousel-wrapper" data-slide-to="0" class="active"></li>
+                 <li data-target="#cat-carousel-wrapper" data-slide-to="1"></li>
+                 <li data-target="#cat-carousel-wrapper" data-slide-to="2"></li>
+                </ol>
+              </div>
+
+              <div class="cat-desc-wrapper">
+                <h2 class="GeeGeeheader">GeeGee</h2>
+                <br>
+                <p>This is my cat GeeGee. Look at this cat model! He actually looks a lot more grumpy on a regular day, had to pose for this as I was holding a treat behind the camera. Tough life even as a cat.</p>
+                <br>
+                <p>I have always considered myself a dog person my whole life until I met GeeGee. I used to hate cats for some reason, I was scared of the scratches and all those online videos I saw with cats attacking their owners out of nowhere. But GeeGee is honestly the sweestest little kitty you will ever meet!</p>
+                <br>
+                <p>GeeGee is a very nonchalant boy, he would head bump me every morning, beg for some scratches on his head and do his kneading business. He likes belly rub the most and being held up like a baby, which makes me wonder if he low key knows I like dogs.</p>
+                <br>
+                <p>Of course being a cutie he is, he is spoiled by many of my friends with treats and toys and a self-portrait from his auntie.</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer id="footer">
+        <div class=footer-socialmedia-wrapper>
+          <h3>Follow me on Instagram</h3>
+          <div class=footer-socialmedia-icon>
+            <a href="https://www.instagram.com/the.exploded.tastebuds/" target="_blank" class="fab fa-instagram"></a>
+          </div>
+        </div>
+        <div class="Contact-wrapper">
+          <h3>Get in touch with me</h3>
+          <div class=email_wrapper>
+            <i class="far fa-envelope"></i>
+            <p class=emailaddress>the.exploded.tastebuds@gmail.com</p>
+          </div>
+        </div>
+        <div class=copyright>
+          <p><small>&copy:2021 THE.EXPLODED.TASTEBUDS</small></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      var topnav = document.getElementById("topnav");
+      var topnavlinks = topnav.getElementsByClassName("navlinks");
+      for (var i = 0; i < topnavlinks.length; i++) {
+        topnavlinks[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("activetab");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" activetab", "");
+        }
+        this.className += " activetab";
+        });
+      };
+    </script>
+
+  </body>
+</html>
