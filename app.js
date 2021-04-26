@@ -45,8 +45,5 @@ $(window).on("scroll", function() {
     }
 });
 
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
 
 navSlide();
