@@ -299,7 +299,7 @@ html, body {
 	  height: auto;
 		margin-top: 1rem;
 	}
-	.burgericon-homepage{
+	.burgericon-homepage, .burgericon {
 		margin-top: 1rem;
 	}
 	.burgericon-homepage div, .burgericon div {
@@ -309,6 +309,10 @@ html, body {
 	}
 	.topnav-wrapper-homepage, .topnav-wrapper {
 		height: 3rem;
+	}
+	.navlinks, .navlinks-homepage {
+		height: 100vh;
+		top: 1rem;
 	}
 }
 
