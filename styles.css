@@ -363,21 +363,27 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+	#cat-carousel-wrapper {
+		margin-right: 1rem;
+	}
 	.carousel-indicators li {
-		width: 0.75rem;
-		height: 0.75rem;
-		margin: 0.4rem;
+		width: 0.6rem;
+		height: 0.6rem;
+		margin: 0.3rem;
 		border-width: 0.125rem;
 	}
 	.carousel-indicators .active {
-		width: 0.75rem;
-		height: 0.75rem;
-		margin: 0.4rem;
+		width: 0.6rem;
+		height: 0.6rem;
+		margin: 0.3rem;
 		border-width: 0.125rem;
 	}
 }
 
 @media screen and (max-width: 320px) {
+	#cat-carousel-wrapper {
+		margin-right: 0.5rem;
+	}
 	.carousel-indicators li {
 		width: 0.4rem;
 		height: 0.4rem;
